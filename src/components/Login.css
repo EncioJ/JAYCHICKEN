@@ -445,12 +445,14 @@
 @media (max-width: 480px) {
   .login-container {
   width: 700%;
+  margin-top: 110px;
   max-width: 375px;
   background-color: #f9f9f9; /* Light gray background */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out;
+  margin-left: 32px;
 }
 
 .login-title {
