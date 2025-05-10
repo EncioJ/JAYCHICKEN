@@ -45,7 +45,7 @@ function OrderTracking() {
           const startTime = orderData.startTime.toDate();
           const now = new Date();
           const elapsedSeconds = (now - startTime) / 1000; // Elapsed time in seconds
-          const totalSeconds = 5 * 60; // 5 minutes in seconds
+          const totalSeconds = 3 * 60; // 5 minutes in seconds
           const calculatedProgress = Math.min((elapsedSeconds / totalSeconds) * 100, 100);
 
           setProgress(calculatedProgress);

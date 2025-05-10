@@ -47,9 +47,10 @@ body, html {
 }
 
 .hero-button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
+  background-color: #deebdb;
+  border: 2px solid;
+  color: #000000;
+  border-color: #294f2b;
   padding: 10px 20px;
   font-size: 1.2vw;
   border-radius: 5px;
@@ -59,7 +60,8 @@ body, html {
 }
 
 .hero-button:hover {
-  background-color: #388e3c;
+  background-color: #b0cfae;
+  border-color: #2d6530;
   transform: scale(1.05);
 }
 
@@ -170,7 +172,7 @@ body, html {
 }
 
 .order-button {
-  background-color: #4caf50;
+  background-color: #607d5d;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -182,7 +184,7 @@ body, html {
 }
 
 .order-button:hover {
-  background-color: #388e3c;
+  background-color: #2d6530;
   transform: scale(1.05);
 }
 
