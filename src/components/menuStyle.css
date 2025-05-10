@@ -240,3 +240,42 @@ body, html {
     padding: 15px;
   }
 }
+
+@media (max-width: 380px) {
+  .menu_section {
+    width: 100px;
+    padding: 14px;
+    margin-top: 10px;
+  }
+
+  .menu_section div {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  text-align: left ;
+  }
+  
+  .food-section {
+    margin-left: 117px; /* Adjust for smaller sidebar */
+    width: calc(100% - 120px);
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(1, 1fr); /* 2 items per row */
+    gap: 15px;
+  }
+
+  .food-box {
+    width: 220px;
+  }
+
+  .food-image {
+    height: 200px;
+  }
+
+  .add-item-form {
+    max-width: 90%;
+    padding: 15px;
+  }
+}
