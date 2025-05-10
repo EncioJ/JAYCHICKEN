@@ -165,17 +165,26 @@ body, html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu_section {
-    width: 200px;
-    padding: 24px;
+    width: 175px;
+    padding: 14px;
+    margin-top: 10px;
+  }
+
+  .menu_section div {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  text-align: left ;
   }
 
   .food-section {
-    margin-left: 220px; /* Adjust for smaller sidebar */
+    margin-left: 210px; /* Adjust for smaller sidebar */
     width: calc(100% - 220px);
   }
 
   .food-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(1, 1fr); /* 2 items per row */
     gap: 15px;
   }
 
@@ -195,45 +204,39 @@ body, html {
 
 @media (max-width: 480px) {
   .menu_section {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    padding: 10px;
+    width: 100px;
+    padding: 14px;
+    margin-top: 10px;
   }
 
+  .menu_section div {
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+  text-align: left ;
+  }
+  
   .food-section {
-    margin-left: 0;
-    width: 100%;
-    padding: 10px;
+    margin-left: 120px; /* Adjust for smaller sidebar */
+    width: calc(100% - 120px);
   }
 
   .food-grid {
-    grid-template-columns: 1fr; /* 1 item per row */
-    gap: 10px;
+    grid-template-columns: repeat(1, 1fr); /* 2 items per row */
+    gap: 15px;
   }
 
   .food-box {
-    width: 100%;
+    width: 240px;
   }
 
   .food-image {
-    height: 150px;
+    height: 200px;
   }
 
   .add-item-form {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .section {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 20px;
-    height: auto;
+    max-width: 90%;
+    padding: 15px;
   }
 }

@@ -48,10 +48,8 @@ const Contact = () => {
         <div className="landmark">Near Guam Reef Hotel</div>
         <br />
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.4575915225455!2d144.80117867579293!3d13.507486302901585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x671f82927a92bce5%3A0x48d45849f274fb24!2s1000%20Pale%20San%20Vitores%20Rd%2C%20Tumon%2C%2096913%2C%20Guam!5e0!3m2!1sen!2s!4v1743596168684!5m2!1sen!2s"
-          width="800"
-          height="450"
-          style={{ border: "2px solid black" }}
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d310.4012620791458!2d144.80249283544654!3d13.433755378777084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1746853652668!5m2!1sen!2s"
+          className="location-iframe"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -71,7 +69,7 @@ const Contact = () => {
 
       {/* Footer Section */}
       <div className="footer">
-        <div className="footer-text">© 2023 Fuji Ichybun Restaurant</div>
+        <div className="footer-text">© 2023 Jay's Chicken</div>
         <div className="footer-text">Privacy Policy</div>
         <div className="footer-text">Terms & Conditions</div>
       </div>

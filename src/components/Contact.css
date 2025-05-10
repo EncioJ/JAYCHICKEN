@@ -60,13 +60,13 @@
   margin-bottom: 40px;
 }
 
-.location-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.location-iframe {
+  width: 2000px; /* Make it responsive */
+  max-width: 1200px; /* Set a maximum width */
+  height: 650px; /* Set the height */
+  border: 2px solid black; /* Add a border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in width/height */
 }
 
 /* Hours Section */
@@ -107,6 +107,7 @@
   .contact-column {
     width: 100%; /* Make columns take full width */
     padding: 15px; /* Add padding for better spacing */
+    margin-left: 60px;
     background-color: #ffffff; /* Add a white background for better contrast */
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -120,6 +121,7 @@
   }
 
   .contact-item {
+    margin-left: 10px;
     flex-direction: column; /* Stack icon and text vertically */
     align-items: center;
     text-align: center;
@@ -142,12 +144,15 @@
     box-sizing: border-box; /* Include padding in width calculation */
   }
 
-  .location-image {
-    max-width: 87%; /* Ensure the image fits within the screen */
-    border-radius: 8px; /* Slightly reduce border radius */
-    margin: 20px 0; /* Add spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
-  }
+.location-iframe {
+  width: 2000px; /* Make it responsive */
+  max-width: 660px; /* Set a maximum width */
+  height: 650px; /* Set the height */
+  margin-left: 67px;
+  border: 2px solid black; /* Add a border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
 
   .hours {
     font-size: 1rem; /* Reduce font size */
@@ -168,39 +173,72 @@
 
 @media (max-width: 480px) {
   .contact-us {
-    padding: 10px; /* Further reduce padding for smaller screens */
-    width: 100%; /* Ensure it spans the full width */
+    padding: 8px; /* Reduce padding further */
+    margin-top: 80px; /* Adjust spacing below the navbar */
+    width: 95%; /* Slightly reduce width for better fit */
     box-sizing: border-box; /* Include padding in width calculation */
   }
 
-  .subheader {
-    font-size: 1.2rem; /* Further reduce font size */
-    margin-bottom: 10px; /* Adjust spacing */
+  .contact-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+    gap: 10px; /* Reduce spacing between stacked columns */
+    width: 50%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .contact-column {
+    margin-left: 145px;
+    margin-top: 40px;
+    width: 80%; /* Make columns take full width */
+    padding: 3px; /* Reduce padding */
+    background-color: #ffffff; /* Add a white background for better contrast */
+    margin-right: 325px;
+    border-radius: 6px; /* Slightly reduce border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+   .subheader {
+    font-size: 1.3rem; /* Slightly larger font size for better readability */
+    margin-bottom: 12px; /* Adjust spacing */
     text-align: center; /* Ensure text is centered */
   }
 
-  .contact-text {
-    font-size: 0.9rem; /* Further reduce font size */
-    text-align: center; /* Ensure text is centered */
-    width: 100%; /* Ensure it spans the full width */
-    box-sizing: border-box; /* Include padding in width calculation */
+  .location-section {
+    font-size: 1rem; /* Reduce font size */
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Adjust spacing */
+     margin-right: 27%;
   }
 
-  .location-image {
-    border-radius: 5px; /* Reduce border radius */
-    margin: 15px 0; /* Adjust spacing */
-    max-width: 100%; /* Ensure the image fits within the screen */
-    box-sizing: border-box; /* Include padding in width calculation */
+.location-iframe {
+  width: 2000px; /* Make it responsive */
+  max-width: 400px; /* Set a maximum width */
+  height: 350px; /* Set the height */
+  margin-right: 90px;
+  border: 2px solid black; /* Add a border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+  .hours-section {
+    margin-left: 120px;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Adjust spacing */
+    margin-right: 47%;
   }
 
   .hours {
-    font-size: 0.9rem; /* Further reduce font size */
+    font-size: 0.95rem; /* Reduce font size */
+    margin-top: 8px; /* Adjust spacing */
     text-align: center; /* Ensure text is centered */
     width: 100%; /* Ensure it spans the full width */
     box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .footer {
+    margin-right: 180px;
     font-size: 0.8rem; /* Further reduce footer font size */
     margin-top: 15px; /* Adjust spacing */
     text-align: center; /* Ensure text is centered */

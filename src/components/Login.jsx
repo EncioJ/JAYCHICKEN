@@ -216,7 +216,7 @@ const LoadprofileTab = () => {
                   required
                 />
               </div>
-              <button type="submit" className="button2" disabled={isLoading}>
+              <button type="submit" className="login-button" disabled={isLoading}>
                 {isLoading ? 'Logging in...' : 'Login'}
               </button>
             </form>
@@ -267,7 +267,7 @@ const LoadprofileTab = () => {
               </div>
             </div>
             <footer className="footer">
-              <p>© 2023 KADU Kitchen Restaurant</p>
+              <p>© 2023 Jay's Chicken </p>
               <p><Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms & Conditions</Link></p>
             </footer>
           </div>

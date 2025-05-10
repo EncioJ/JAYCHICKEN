@@ -1,24 +1,25 @@
 /* General Styles */
 
 .signup-page {
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
+  overflow: hidden; /* Prevent extra scrolling */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff; /* Ensure the background is white */
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out;
 }
 
 .signup-container {
-  background: #ffffff; /* Ensure the container background is white */
-  border-radius: 8px; /* Optional: Keep rounded corners if needed */
+  margin-top: 50px; /* Remove unnecessary margin */
+  background-color: #fff;
+  border-radius: 15px;
   padding: 2rem;
   width: 100%;
   max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .signup-title {
@@ -71,7 +72,7 @@
 /* Buttons */
 .button2 {
   width: 100%;
-  background: #8b2424;
+  background-color:#698976;
   border: none;
   border-radius: 4px;
   padding: 0.75rem;
@@ -83,7 +84,7 @@
 }
 
 .button2:hover {
-  background: #a32d2d;
+  background: #2a6e41;
 }
 
 /* Error and Success Messages */

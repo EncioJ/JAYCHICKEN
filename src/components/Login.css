@@ -191,10 +191,11 @@
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out;
-  margin-top: 3rem; /* Add or increase this value to move it down */
+  margin-top: 4rem; /* Add or increase this value to move it down */
 }
 
 .login-title {
+  text-transform: uppercase;
   text-align: center;
   font-family: "Outfit-SemiBold", sans-serif;
   font-size: 2rem;
@@ -336,6 +337,24 @@
   transition: background-color 0.3s ease;
 }
 
+  .login-button {
+  width: 100%;
+  background-color:#698976;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #fff;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  .login-button:hover {
+    background: #2a6e41;
+  }
+
+
 .track-order-btn:hover {
   background-color: #000;
 }
@@ -347,7 +366,28 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .login-container {
+  width: 700%;
+  margin-top: 450px;
+  max-width: 450px;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 2rem;
+  color: #333; /* Dark gray */
+  margin-bottom: 1.5rem;
+}
+  
   .profile {
+    margin-top: 60px;
     flex-direction: column;
     height: auto;
     width: 100%;
@@ -367,41 +407,101 @@
 
   .login-container {
     padding: 1.5rem;
+
   }
 
   .login-title {
     font-size: 1.8rem;
   }
 
-  .button2 {
+  .login-button {
+    background-color:#698976;
+    width: 100%;
     font-size: 0.9rem;
     padding: 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
+  .login-container {
+  width: 700%;
+  margin-top: 350px;
+  max-width: 375px;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 2rem;
+  color: #333; /* Dark gray */
+  margin-bottom: 1.5rem;
+}
+  .profile {
+    margin-top: 80px; /* Reduce top margin */
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow height to adjust dynamically */
+    width: 100%; /* Full width for mobile */
+    margin-right: 100px;
+  }
+
   .profile .side-tabs {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    width: 100%; /* Full width for tabs */
+    flex-direction: row; /* Arrange tabs horizontally */
+    justify-content: space-around; /* Space tabs evenly */
+    padding: 1rem; /* Adjust padding */
+    border-radius: 0; /* Remove rounded corners */
   }
 
-  .profile .tab-content h3 {
-    font-size: 1.5rem;
+  .profile .tab-content {
+    padding: 1rem; /* Adjust padding for content */
+    width: 100%; /* Full width for content */
   }
 
-  .input-field {
+  .profile .side-tabs button {
+    font-size: 6pt; /* Reduce font size for side-tab buttons */
+  }
+
+  .profile .tab-content h3,h2 {
+    font-size: 9pt; /* Reduce font size for tab content headers */
+  }
+
+  .info-card h4 {
+    font-size: 9pt;
+  }
+
+  .profile .tab-content p,
+  .profile .tab-content ul li {
+    font-size: 9pt; /* Reduce font size for tab content text */
+  }
+
+  .order-card p {
+    font-size: 9pt; /* Reduce font size for order card text */
+  }
+
+  .order-section-header {
+    font-size: 9pt; /* Reduce font size for section headers */
+  }
+
+  .login-container {
+    padding: 1.5rem;
+
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .login-button {
+    background-color:#698976;
+    width: 100%;
     font-size: 0.9rem;
     padding: 0.6rem;
-  }
-
-  .button2 {
-    font-size: 0.8rem;
-    padding: 0.5rem;
-  }
-
-  .footer {
-    font-size: 0.7rem;
   }
 }
 
