@@ -394,4 +394,70 @@ p {
   }
 }
 
+@media (max-width: 385px) {
+  .hero-restaurant-name {
+    font-size: 7vw;
+  }
+
+  .hero-section {
+    margin-top: 50pt;
+    width: 93%;
+  }
+  .hero-subtitle {
+    font-size: 6vw;
+  }
+  .hero-title h1 {
+    font-size: 5pt;
+  }
+
+  .hero-button,
+  .order-button {
+    font-size: 5vw;
+    padding: 5px 10px;
+  }
+
+  .restaurant-image {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .description{
+    width: 100%;
+    font-size: 13pt;
+  }
+
+  .tagline {
+    font-size: 12pt;
+  }
+
+  .cuisine-section{
+    width: 90%;
+  }
+
+  .featured-dishes-section {
+    width: 90%;
+  }
+
+  .cta-section {
+    width: 90%;
+  }
+
+  .footer-section {
+    width: 90%;
+  }
+
+  .front-page-content {
+    width: 90%;
+  }
+  .section-title {
+    font-size: 6vw;
+  }
+
+  .cuisine,
+  .dish {
+    max-width: 98%;
+    padding: 6px;
+  }
+}
+
 
