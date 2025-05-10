@@ -93,7 +93,7 @@ function FrontPage() {
       </div>
 
       {/* Footer Section */}
-      <div className="section">
+      <div className="footer-section">
         <div className="container">
           <div className="title">© 2023 Jay's Chicken Restaurant</div>
           <div className="title2">Privacy Policy</div>

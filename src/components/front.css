@@ -1,13 +1,15 @@
-/* General Styles */
+
+
 body, html {
-  background-color: #f5f5f5; /* Light gray background for a clean look */
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  padding-right: 10px; /* Ensures no unwanted overflow on the right */
 }
 
+/* Hero Section */
 .hero-section {
   height: 100vh; /* Full viewport height */
   width: 100%; /* Ensure it spans the full width of the viewport */
@@ -21,51 +23,47 @@ body, html {
   overflow: hidden; /* Prevent any overflow issues */
   animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
 }
-
 .hero-overlay {
-  background-color: rgba(255, 255, 255, 0.374); /* Slightly lighter overlay for better text visibility */
+  background-color: rgba(255, 255, 255, 0.374);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  animation: slideDown 1s ease-in-out; /* Slide-down animation */
+  animation: slideDown 1s ease-in-out;
+  width: 100%;
 }
 
 .hero-restaurant-name {
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: bold;
-  color: #000; /* Black text for readability */
-  text-align: center;
-  margin-bottom: 10px;
   font-family: "Outfit-SemiBold", sans-serif;
   letter-spacing: -0.03em;
-  animation: fadeInUp 1.2s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.2s ease-in-out;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin-bottom: 20px;
-  text-align: center;
-  color: #000; /* Black text for readability */
-  animation: fadeInUp 1.4s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.4s ease-in-out;
 }
 
 .hero-button {
-  background-color: #4caf50; /* Green button to match the website */
-  color: #fff; /* White text for contrast */
+  background-color: #4caf50;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: fadeInUp 1.6s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.6s ease-in-out;
 }
 
 .hero-button:hover {
-  background-color: #388e3c; /* Darker green on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #388e3c;
+  transform: scale(1.05);
 }
 
+/* Content Section */
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -74,8 +72,9 @@ body, html {
   margin: 20px auto;
   max-width: 1200px;
   padding: 20px;
-  box-sizing: border-box;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 1.5s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .text-section {
@@ -83,9 +82,9 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: black;
   text-align: center;
-  color: #000; /* Black text for readability */
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .frame-4, .frame-6 {
@@ -96,28 +95,23 @@ body, html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .tagline {
-  color: #000; /* Black text for readability */
-  text-align: center;
   font-family: "OverTheRainbow-Regular", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2vw;
   line-height: 1.2;
   margin: 10px 0;
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .description {
-  color: #000; /* Black text for readability */
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1vw;
   line-height: 1.6;
   width: 90%;
   margin: 10px auto;
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .image-section {
@@ -125,7 +119,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .restaurant-image {
@@ -134,95 +128,62 @@ body, html {
   height: auto;
   object-fit: contain;
   margin: 20px 0;
-  animation: zoomIn 1s ease-in-out; /* Zoom-in animation */
+  animation: zoomIn 1s ease-in-out;
 }
 
-.cuisine-section {
-  background-color: #ffffff00;
+.cuisine-section,
+.featured-dishes-section,
+.cta-section,
+.footer-section {
+  color:#000;
   padding: 40px 20px;
   text-align: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 1.5s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #000; /* Black text for readability */
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
-.cuisine-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
-}
-
-.cuisine {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #000; /* Black text for readability */
-  animation: zoomIn 1s ease-in-out; /* Zoom-in animation */
-}
-
-.featured-dishes-section {
-  padding: 40px 20px;
-  text-align: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
-}
-
+.cuisine-wrapper,
 .featured-dishes-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 1.5s ease-in-out;
 }
 
+.cuisine,
 .dish {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
   max-width: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #000; /* Black text for readability */
-  animation: zoomIn 1s ease-in-out; /* Zoom-in animation */
-}
-
-.cta-section {
-  background-color: #f5f5f5; /* Light gray background for a clean look */
-  padding: 40px 20px;
-  text-align: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  animation: zoomIn 1s ease-in-out;
 }
 
 .order-button {
-  background-color: #4caf50; /* Green button for a fresh look */
-  color: #fff; /* White text for contrast */
+  background-color: #4caf50;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1vw;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  animation: fadeInUp 1.6s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.6s ease-in-out;
 }
 
 .order-button:hover {
-  background-color: #388e3c; /* Darker green on hover */
-  transform: scale(1.05); /* Slight zoom effect */
-}
-
-.section {
-  background-color: #f5f5f500; /* Light gray background for a clean look */
-  padding: 40px 80px;
-  text-align: center;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  background-color: #388e3c;
+  transform: scale(1.05);
 }
 
 .container {
@@ -231,27 +192,23 @@ body, html {
   align-items: center;
   text-align: center;
   gap: 10px;
-  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .title, .title2, .title3 {
   font-size: 1rem;
   margin: 5px 0;
-  color: #000000; /* White text for contrast */
-  animation: fadeInUp 1.5s ease-in-out; /* Fade-in from bottom */
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 p {
-  color:#000;
+  color: #000;
 }
-/* Keyframes for Animations */
+
+/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
@@ -286,3 +243,155 @@ p {
     transform: scale(1);
   }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-restaurant-name {
+    font-size: 4vw;
+  }
+
+  .hero-subtitle {
+    font-size: 3vw;
+  }
+
+  .hero-button,
+  .order-button {
+    font-size: 2vw;
+    padding: 8px 16px;
+  }
+
+  .restaurant-image {
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 3vw;
+  }
+
+  .cuisine,
+  .dish {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .hero-section {
+    padding: 10px;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 10px; /* Consistent left padding */
+    padding-right: 10px; /* Consistent right padding */
+  }
+
+  .hero-restaurant-name {
+    font-size: 6vw;
+  }
+
+  .hero-subtitle {
+    font-size: 5vw;
+  }
+
+  .hero-button,
+  .order-button {
+    font-size: 4vw;
+    padding: 6px 12px;
+  }
+
+  .description {
+    font-size: 3vw;
+  }
+
+  .restaurant-image {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 5vw;
+  }
+
+  .cuisine,
+  .dish {
+    max-width: 95%;
+    padding: 8px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+  }
+
+  .frame-4, .frame-6 {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 435px) {
+  .hero-restaurant-name {
+    font-size: 7vw;
+  }
+
+  .hero-section {
+    width: 100%;
+  }
+  .hero-subtitle {
+    font-size: 6vw;
+  }
+  .hero-title h1 {
+    font-size: 5pt;
+  }
+
+  .hero-button,
+  .order-button {
+    font-size: 5vw;
+    padding: 5px 10px;
+  }
+
+  .restaurant-image {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .description{
+    width: 100%;
+    font-size: 13pt;
+  }
+
+  .tagline {
+    font-size: 12pt;
+  }
+
+  .cuisine-section{
+    width: 100%;
+  }
+
+  .featured-dishes-section {
+    width: 100%;
+  }
+
+  .cta-section {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .front-page-content {
+    width: 100%;
+  }
+  .section-title {
+    font-size: 6vw;
+  }
+
+  .cuisine,
+  .dish {
+    max-width: 98%;
+    padding: 6px;
+  }
+}
+
+

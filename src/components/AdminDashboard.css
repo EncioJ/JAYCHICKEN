@@ -592,13 +592,14 @@ h3,h2 {
   .orders-table th,
   .orders-table td {
     padding: 1px; /* Further reduce padding */
-    font-size: 7pt;
+    font-size: 5pt;
+    margin-right: 80px;
   }
 
   .complete-button,
   .cancel-button {
-    font-size: 0.7rem; /* Further reduce font size */
-    padding: 5px 10px; /* Adjust padding */
+    font-size: 6pt; /* Further reduce font size */
+    padding: 2px 2px; /* Adjust padding */
   }
 
   .logout-button {

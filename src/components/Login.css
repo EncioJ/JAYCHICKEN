@@ -367,14 +367,31 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .login-container {
-  width: 700%;
-  margin-top: 450px;
+  width: 500%;
   max-width: 450px;
   background-color: #f9f9f9; /* Light gray background */
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.icon {
+  width: 1.5rem; /* Set a fixed width for the icon */
+  height: 1.5rem; /* Set a fixed height for the icon */
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.input-field {
+  flex: 1; /* Allow the input field to take up the remaining space */
+  width: auto; /* Ensure it adjusts dynamically */
 }
 
 .login-title {
@@ -384,6 +401,10 @@
   font-size: 2rem;
   color: #333; /* Dark gray */
   margin-bottom: 1.5rem;
+}
+
+.login-page {
+  width: 90%;
 }
   
   .profile {
@@ -396,9 +417,8 @@
   .profile .side-tabs {
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-    border-radius: 0;
+    justify-content:space-evenly;
+    padding-right: 70px;
   }
 
   .profile .tab-content {
@@ -425,7 +445,6 @@
 @media (max-width: 480px) {
   .login-container {
   width: 700%;
-  margin-top: 350px;
   max-width: 375px;
   background-color: #f9f9f9; /* Light gray background */
   padding: 2rem;
@@ -450,6 +469,8 @@
     margin-right: 100px;
   }
 
+  
+
   .profile .side-tabs {
     width: 100%; /* Full width for tabs */
     flex-direction: row; /* Arrange tabs horizontally */
@@ -464,7 +485,95 @@
   }
 
   .profile .side-tabs button {
-    font-size: 6pt; /* Reduce font size for side-tab buttons */
+    font-size: 6pt;
+    width: 47pt; /* Reduce font size for side-tab buttons */
+  }
+
+  .profile .tab-content h3,h2 {
+    font-size: 9pt; /* Reduce font size for tab content headers */
+  }
+
+  .info-card h4 {
+    font-size: 9pt;
+  }
+
+  .profile .tab-content p,
+  .profile .tab-content ul li {
+    font-size: 9pt; /* Reduce font size for tab content text */
+  }
+
+  .order-card p {
+    font-size: 9pt; /* Reduce font size for order card text */
+  }
+
+  .order-section-header {
+    font-size: 9pt; /* Reduce font size for section headers */
+  }
+
+  .login-container {
+    padding: 1.5rem;
+
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .login-button {
+    background-color:#698976;
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 391px) {
+  .login-container {
+  width: 700%;
+  max-width: 375px;
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Outfit-SemiBold", sans-serif;
+  font-size: 2rem;
+  color: #333; /* Dark gray */
+  margin-bottom: 1.5rem;
+}
+  .profile {
+    margin-top: 80px; /* Reduce top margin */
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow height to adjust dynamically */
+    width: 100%; /* Full width for mobile */
+    margin-right: 100px;
+  }
+
+  
+
+  .profile .side-tabs {
+    width: 100%; /* Full width for tabs */
+    flex-direction: row; /* Arrange tabs horizontally */
+    justify-content: space-around; /* Space tabs evenly */
+    padding: 1rem; /* Adjust padding */
+    border-radius: 0; /* Remove rounded corners */
+  }
+
+  .profile .tab-content {
+    padding: 1rem; /* Adjust padding for content */
+    width: 100%; /* Full width for content */
+  }
+
+  .profile .side-tabs button {
+    font-size: 6pt;
+    width: 39pt; /* Reduce font size for side-tab buttons */
+    outline: none;
+    text-align: left;
   }
 
   .profile .tab-content h3,h2 {
