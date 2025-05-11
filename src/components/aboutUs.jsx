@@ -13,10 +13,10 @@ function AboutUs() {
         </div>
         <div className="about-us-content">
           <p>
-            Welcome to <span className="restaurant-name">JAY’S CHICKEN</span> – More Than Just Chicken. It’s Island Heritage on a Plate.
+            Welcome to <span className="restaurant-name">JAY CHICKEN</span> – More Than Just Chicken. It’s Island Heritage on a Plate.
           </p>
           <p>
-            It all started in 1960, when three close friends—Julio Santos, Arturo dela Cruz, and Yong Wei Chen—came together with a dream: 
+            It all started in 1960, when three close friends, Julio Santos, Arturo dela Cruz, and Yong Wei Chen came together with a dream: 
             to share the comforting flavors of their homelands with the people of Guam. Julio and Arturo brought the heart and soul of Filipino cooking, 
             while Yong introduced the bold, savory traditions of Chinese cuisine.
           </p>
@@ -24,16 +24,16 @@ function AboutUs() {
             <img src={AboutUsImage} alt="JAY'S CHICKEN" />
           </div>
           <p>
-            What began as a small roadside stand in Hagåtña, serving up crispy fried chicken using Julio’s family marinade soon expanded. 
+            What began as a small business in Hagåtña, serving up crispy fried chicken using Julio’s family marinade soon expanded. 
             Customers kept coming back not only for the chicken, but also for pancit, lumpia, sweet and sour pork, and other beloved Filipino-Chinese favorites 
             that reminded them of home.
           </p>
           <p>
-            They named the restaurant <span className="restaurant-name">JAY’S CHICKEN</span>, using the first letters of their names. J for Julio, A for Arturo, 
+            They named the restaurant <span className="restaurant-name">JAY CHICKEN</span>, using the first letters of their names. J for Julio, A for Arturo, 
             and Y for Yong as a symbol of their friendship, culture, and shared love for food.
           </p>
           <p>
-            Today, <span className="restaurant-name">JAY’S CHICKEN</span> is still proudly local, still family-owned, and still serving up the same flavors that made it 
+            Today, <span className="restaurant-name">JAY CHICKEN</span> is still proudly local, still family-owned, and still serving up the same flavors that made it 
             a household name more than 60 years ago. From fried chicken to classic island-style lumpia, our menu is a celebration of the Filipino-Chinese spirit 
             that helped shape Guam’s unique food culture.
           </p>
@@ -45,7 +45,7 @@ function AboutUs() {
           </p>
         </div>
         <div className="about-us-footer">
-          <p>© 2023 JAY’S CHICKEN. All rights reserved.</p>
+          <p>© 2023 Jay Chicken Restaurant. All rights reserved.</p>
         </div>
       </div>
     </>

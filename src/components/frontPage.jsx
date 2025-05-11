@@ -28,7 +28,7 @@ function FrontPage() {
           {/* Welcome Section */}
           <div className="text-section">
             <div className="frame-4">
-              <div className="hero-restaurant-name">Welcome to Jay's Chicken</div>
+              <div className="hero-restaurant-name">Welcome to Jay Chicken</div>
             </div>
 
             <div className="tagline">Authentic Filipino, Chinese, and Chicken Delights</div>
@@ -95,7 +95,7 @@ function FrontPage() {
       {/* Footer Section */}
       <div className="footer-section">
         <div className="container">
-          <div className="title">© 2023 Jay's Chicken Restaurant</div>
+          <div className="title">© 2023 Jay Chicken Restaurant</div>
           <div className="title2">Privacy Policy</div>
           <div className="title3">Terms &amp; Conditions</div>
         </div>

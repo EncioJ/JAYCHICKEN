@@ -267,7 +267,7 @@ const LoadprofileTab = () => {
               </div>
             </div>
             <footer className="footer">
-              <p>© 2023 Jay's Chicken </p>
+              <p>© 2023 Jay Chicken Restaurant</p>
               <p><Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms & Conditions</Link></p>
             </footer>
           </div>

@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
           <div className="contact-item">
             <img className="icon" src={mailIcon} alt="Mail" />
-            <span className="contact-text">hello@fujiichybun.com</span>
+            <span className="contact-text">hello@jaychicken.com</span>
           </div>
         </div>
 
@@ -32,11 +32,11 @@ const Contact = () => {
           <div className="subheader">Follow Us!</div>
           <div className="contact-item">
             <img className="icon" src={instagramIcon} alt="Instagram" />
-            <span className="contact-text">@TheRealFujiItchyBun</span>
+            <span className="contact-text">@TheRealJayChicken</span>
           </div>
           <div className="contact-item">
             <img className="icon" src={facebookIcon} alt="Facebook" />
-            <span className="contact-text">@TheRealFujiItchyBun</span>
+            <span className="contact-text">@TheRealJayChicken</span>
           </div>
         </div>
       </div>
@@ -44,8 +44,8 @@ const Contact = () => {
       {/* Location Section */}
       <div className="location-section">
         <div className="subheader">Location</div>
-        <div className="address">1317 Pale San Vitores Rd, Tumon, 96913, Guam</div>
-        <div className="landmark">Near Guam Reef Hotel</div>
+        <div className="address">CRJ3+V8P, University Dr, University of Guam, 96923, Guam</div>
+        <div className="landmark">At Warehouse B</div>
         <br />
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d310.4012620791458!2d144.80249283544654!3d13.433755378777084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1746853652668!5m2!1sen!2s"

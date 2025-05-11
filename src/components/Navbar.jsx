@@ -26,7 +26,7 @@ function Navbar() {
     <div className="navbar">
       {/* Logo */}
       <Link to="/" className="navbar-logo">
-        JAY'S CHICKEN
+        JAY CHICKEN
       </Link>
 
       {/* Hamburger Menu for Mobile */}
