@@ -28,7 +28,7 @@ function FrontPage() {
           {/* Welcome Section */}
           <div className="text-section">
             <div className="frame-4">
-              <div className="hero-restaurant-name">Welcome to Jay Chicken</div>
+              <div className="hero-restaurant-name">Welcome to JAY Chicken</div>
             </div>
 
             <div className="tagline">Authentic Filipino, Chinese, and Chicken Delights</div>
