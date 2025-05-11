@@ -69,7 +69,7 @@ const Contact = () => {
 
       {/* Footer Section */}
       <div className="footer">
-        <div className="footer-text">© 2023 Jay's Chicken</div>
+        <div className="footer-text">© 2023 JAY Chicken Restaurant</div>
         <div className="footer-text">Privacy Policy</div>
         <div className="footer-text">Terms & Conditions</div>
       </div>

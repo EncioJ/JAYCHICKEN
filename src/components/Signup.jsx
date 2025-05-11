@@ -180,7 +180,7 @@ function SignUp() {
            
             </div>
             <footer className="footer">
-              <p>© 2023 Jay Chicken Restaurant</p>
+              <p>© 2023 JAY Chicken Restaurant</p>
               <p><Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms & Conditions</Link></p>
             </footer>
           </div>

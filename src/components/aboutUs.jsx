@@ -45,7 +45,7 @@ function AboutUs() {
           </p>
         </div>
         <div className="about-us-footer">
-          <p>© 2023 Jay Chicken Restaurant. All rights reserved.</p>
+          <p>© 2023 JAY Chicken Restaurant. All rights reserved.</p>
         </div>
       </div>
     </>
