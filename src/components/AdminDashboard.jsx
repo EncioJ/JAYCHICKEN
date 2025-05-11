@@ -7,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function AdminDashboard() {
+  //State
   const [user, setUser] = useState(null);
   const [menuItems, setMenuItems] = useState([]);
   const [selectedSection, setSelectedSection] = useState(null);
@@ -14,9 +15,10 @@ function AdminDashboard() {
   const [newSectionName, setNewSectionName] = useState("");
   const [orders, setOrders] = useState([]);
   const [activeTab, setActiveTab] = useState("menu");
-
+  //Admin email for authentication
   const adminEmail = "zyuhang002@gmail.com";
 
+  //Effect to handle authentication and data fetching
   useEffect(() => {
     const unsubscribeAuth = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser && currentUser.email === adminEmail) {
@@ -26,18 +28,22 @@ function AdminDashboard() {
       }
     });
 
-    const unsubscribeMenu = onSnapshot(collection(db, "menu"), (snapshot) => {
-      const menuData = [];
-      snapshot.forEach((doc) => {
-        const data = doc.data();
-        menuData.push({ id: doc.id, ...data });
-      });
+    // Fetch menu items from Firestore in ascending order
+    const unsubscribeMenu = onSnapshot(
+      query(collection(db, "menu"), orderBy("category", "asc")),
+      (snapshot) => {
+        const menuData = [];
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          menuData.push({ id: doc.id, ...data });
+        });
 
-      setMenuItems(menuData);
-      if (!selectedSection && menuData.length > 0) {
-        setSelectedSection(menuData[0].id);
+        setMenuItems(menuData);
+        if (!selectedSection && menuData.length > 0) {
+          setSelectedSection(menuData[0].id);
+        }
       }
-    });
+    );
 
     const unsubscribeOrders = onSnapshot(
       query(collection(db, "orders"), orderBy("createdAt", "desc")),
@@ -51,6 +57,8 @@ function AdminDashboard() {
       }
     );
 
+    // Cleanup function to unsubscribe from listeners
+    // Prevent memory leaks
     return () => {
       unsubscribeAuth();
       unsubscribeMenu();
@@ -58,6 +66,8 @@ function AdminDashboard() {
     };
   }, [selectedSection]);
 
+   //Validation function for menu item
+  // Check if the new menu item has valid data
   const validateMenuItem = () => {
     if (!newMenuItem.name.trim()) {
       toast.error("Name is required.", { position: "top-right", autoClose: 2000 });
@@ -74,6 +84,7 @@ function AdminDashboard() {
     return true;
   };
 
+  //Function to handle adding a new menu item
   const handleAddMenuItem = async () => {
     if (!validateMenuItem()) {
       return;
@@ -105,7 +116,7 @@ function AdminDashboard() {
       toast.error("Failed to add menu item. Please try again.", { position: "top-right", autoClose: 2000 });
     }
   };
-
+   //Function to handle removing a menu item
   const handleRemoveMenuItem = async (index) => {
     if (!window.confirm("Are you sure you want to remove this menu item?")) {
       return;
@@ -129,7 +140,7 @@ function AdminDashboard() {
       toast.error("Failed to remove menu item. Please try again.", { position: "top-right", autoClose: 2000 });
     }
   };
-
+   //Function to handle adding a new section
   const handleAddSection = async () => {
     if (!newSectionName.trim()) {
       toast.error("Section name is required.", { position: "top-right", autoClose: 2000 });
@@ -138,7 +149,7 @@ function AdminDashboard() {
 
     try {
       const newSection = { category: newSectionName, items: [] };
-      const sectionRef = doc(collection(db, "menu"));
+      const sectionRef = doc(collection(db, "menu")); // Correctly create a new document reference
       await setDoc(sectionRef, newSection);
 
       toast.success("New section added successfully!", { position: "top-right", autoClose: 2000 });
@@ -149,6 +160,7 @@ function AdminDashboard() {
     }
   };
 
+  //Function to handle removing a section (Category)
   const handleRemoveSection = async (sectionId) => {
     if (!window.confirm("Are you sure you want to delete this section? This will remove all its menu items.")) {
       return;
@@ -168,6 +180,7 @@ function AdminDashboard() {
     }
   };
 
+  //Function to handle updating order status
   const handleUpdateOrderStatus = async (orderId, newStatus) => {
     try {
       const orderRef = doc(db, "orders", orderId);
@@ -180,6 +193,7 @@ function AdminDashboard() {
     }
   };
 
+   //Function to handle logging out
   const handleLogout = async () => {
     try {
       await signOut(auth);
